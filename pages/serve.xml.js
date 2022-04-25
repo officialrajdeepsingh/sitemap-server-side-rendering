@@ -2,13 +2,15 @@ import Link from 'next/link';
 import posts from '../data';
 import { getServerSideSitemap } from 'next-sitemap'
 
+// Home component 
 export default function Home() {}
 
-
+// collect all the post
 export async function getServerSideProps(ctx) {
 
   const { params } =    ctx
-
+  
+// allPosts =[]
   const allPosts = posts.map(
     post=> {
       const xmlData =  post.frontmatter
@@ -24,6 +26,8 @@ export async function getServerSideProps(ctx) {
       
     } 
   )
+
+  //  fetch all the post and pass into getServerSideSitemap. but make sure your allPasts in array.
 
   return  await  getServerSideSitemap(ctx, allPosts)
 }

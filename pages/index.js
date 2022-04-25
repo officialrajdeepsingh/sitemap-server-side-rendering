@@ -33,7 +33,7 @@ export default function Home({championData}) {
     );
 }
 
-// This gets called every time the page is called
+// fetch all the post
 export async function getServerSideProps(ctx) {
 
   const { params } =    ctx

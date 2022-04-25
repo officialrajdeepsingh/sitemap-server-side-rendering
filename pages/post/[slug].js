@@ -48,12 +48,12 @@ export default SinglePost
 
 
 
-// This gets called every time the page is called
+// This gets called every time the post is called
 export async function getServerSideProps({ params }) {
 
     const post = posts.find((item) => item.slug === params.slug);
 
-    // Pass data to the page via props
+    // Pass data to the post via props
     return { props: { post } };
 }
 
