@@ -13,9 +13,15 @@ const SinglePost = ({ post }) => {
     }
     return (
         <>
-        <div style={{ padding: "3rem", margin: '5px auto', width:'724px'}} > 
+        <div style={{ padding: "3rem", margin: '5px auto', width:'724px',display:'flex'}} > 
         <Link href='/'>
-            <a> Home</a> 
+            <a style={{ padding: "0.3rem", margin: '2px'}}> Home</a> 
+        </Link>
+        <Link href='/serve.xml'>
+            <a style={{ padding: "0.3rem", margin: '2px'}}>Server-side sitemap</a> 
+        </Link>
+        <Link href='/sitemap.xml'>
+            <a target='_blank' style={{ padding: "0.3rem", margin: '2px'}}>Static Site sitemap</a> 
         </Link>
         </div>
         <div style={{ padding: "3rem", margin: '5px auto', width:'724px'}}>
