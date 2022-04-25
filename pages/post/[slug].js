@@ -11,7 +11,6 @@ const SinglePost = ({ post }) => {
     if (!posts) {
         return <h1>posts does not exist.</h1>;
     }
-    console.log(post.frontmatter.images[0],' post.frontmatter.images[0]  ')
     return (
         <>
         <div style={{ padding: "3rem", margin: '5px auto', width:'724px'}} > 
