@@ -1,9 +1,8 @@
-import Link from 'next/link';
 import posts from '../data';
 import { getServerSideSitemap } from 'next-sitemap'
 
-// Home component 
-export default function Home() {}
+// Sitemap component 
+export default function Sitemap() {}
 
 // collect all the post
 export async function getServerSideProps(ctx) {
